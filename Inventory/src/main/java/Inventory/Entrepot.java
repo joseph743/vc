@@ -25,7 +25,7 @@ public class Entrepot implements Serializable{
     
 
     public Entrepot( String Name, String Short_Name, Address Adr, Location Loc, Entrepot Re_Supply, String Note) {
-        
+        this.ID=this.hashCode();
         this.Name = Name;
         this.Short_Name = Short_Name;
         this.Adr = Adr;
@@ -38,7 +38,7 @@ public class Entrepot implements Serializable{
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 89 * hash + this.ID;
+        
         hash = 89 * hash + Objects.hashCode(this.Name);
         hash = 89 * hash + Objects.hashCode(this.Short_Name);
         hash = 89 * hash + Objects.hashCode(this.Adr);

@@ -49,7 +49,7 @@ public class Operation_State implements Serializable { //Draft,Waiting availabil
     @Override
     public int hashCode() {
         int hash = 5;
-        hash = 89 * hash + this.ID;
+        
         hash = 89 * hash + Objects.hashCode(this.Name);
         return hash;
     }

@@ -12,30 +12,21 @@ import java.util.Objects;
  *
  * @author joseph
  */
-public class Product_Type implements Serializable { // stockable , consumable ,Service
+class Unit_Category implements Serializable{
     
     private int ID;
     private String Name;
 
     
     
-    public Product_Type(String Name) {
+    public Unit_Category(String Name) {
         this.ID=this.hashCode();
-        this.Name = Name;
-    }
-    
-    
-    public String getName() {
-        return Name;
-    }
-
-    public void setName(String Name) {
         this.Name = Name;
     }
 
     @Override
     public int hashCode() {
-        int hash = 3;
+        int hash = 7;
         
         hash = 89 * hash + Objects.hashCode(this.Name);
         return hash;
@@ -52,7 +43,7 @@ public class Product_Type implements Serializable { // stockable , consumable ,S
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final Product_Type other = (Product_Type) obj;
+        final Unit_Category other = (Unit_Category) obj;
         if (this.ID != other.ID) {
             return false;
         }
@@ -61,10 +52,9 @@ public class Product_Type implements Serializable { // stockable , consumable ,S
         }
         return true;
     }
-
     
     
-
+    
     public int getID() {
         return ID;
     }
@@ -72,6 +62,16 @@ public class Product_Type implements Serializable { // stockable , consumable ,S
     public void setID(int ID) {
         this.ID = ID;
     }
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String Name) {
+        this.Name = Name;
+    }
+
+    
     
     
     

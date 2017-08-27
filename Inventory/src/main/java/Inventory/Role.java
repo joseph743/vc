@@ -12,32 +12,41 @@ import java.util.Objects;
  *
  * @author joseph
  */
-public class Product_Type implements Serializable { // stockable , consumable ,Service
+public class Role implements Serializable {
     
     private int ID;
-    private String Name;
-
+    private String Role_Name;
+    //inventory manager,Client , Warehouse Manager;
     
     
-    public Product_Type(String Name) {
-        this.ID=this.hashCode();
-        this.Name = Name;
-    }
-    
-    
-    public String getName() {
-        return Name;
+     public Role(String Role_Name) {
+        this.ID = this.hashCode();
+        this.Role_Name = Role_Name;
     }
 
-    public void setName(String Name) {
-        this.Name = Name;
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
+    }
+
+   
+
+    public String getRole_Name() {
+        return Role_Name;
+    }
+
+    public void setRole_Name(String Role_Name) {
+        this.Role_Name = Role_Name;
     }
 
     @Override
     public int hashCode() {
-        int hash = 3;
-        
-        hash = 89 * hash + Objects.hashCode(this.Name);
+        int hash = 7;
+      
+        hash = 29 * hash + Objects.hashCode(this.Role_Name);
         return hash;
     }
 
@@ -52,26 +61,17 @@ public class Product_Type implements Serializable { // stockable , consumable ,S
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final Product_Type other = (Product_Type) obj;
+        final Role other = (Role) obj;
         if (this.ID != other.ID) {
             return false;
         }
-        if (!Objects.equals(this.Name, other.Name)) {
+        if (!Objects.equals(this.Role_Name, other.Role_Name)) {
             return false;
         }
         return true;
     }
-
     
     
-
-    public int getID() {
-        return ID;
-    }
-
-    public void setID(int ID) {
-        this.ID = ID;
-    }
     
     
     

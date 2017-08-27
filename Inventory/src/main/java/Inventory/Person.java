@@ -24,21 +24,27 @@ public class Person implements Serializable{
    private String Mobile;
    private String Fax;
    private String Emai;
+   private String Username;
+   private String Password;
+   private Role role;
 
-    public Person(int ID, String Name,String Phone, String Mobile, String Fax, String Emai) {
-        this.ID = ID;
+    public Person(String Name,String Phone, String Mobile, String Fax, String Emai, String Username, String Password, Role role) {
+        this.ID=this.hashCode();
         this.Name=Name;
         this.Phone = Phone;
         this.Mobile = Mobile;
         this.Fax = Fax;
         this.Emai = Emai;
+        this.Username=Username;
+        this.Password=Password;
+        this.role=role;        
     }
     
     
     @Override
     public int hashCode() {
         int hash = 3;
-        hash = 19 * hash + this.ID;
+       
         hash = 19 * hash + Objects.hashCode(this.Name);
         hash = 19 * hash + Objects.hashCode(this.Phone);
         hash = 19 * hash + Objects.hashCode(this.Mobile);
@@ -128,5 +134,28 @@ public class Person implements Serializable{
         this.Emai = Emai;
     }
     
+    public void setUsername(String Username){
+        this.Username=Username;
+    }
+    
+    public String getUsername(){
+        return this.Username;
+        
+    }
+    
+    public void setPassword(String Password){
+        this.Password=Password;
+    }
   
+    public String getPassword(){
+        return this.Password;
+    }
+    
+    public Role getRole(){
+        return this.role;
+    }
+    
+    public void setRole(Role role){
+        this.role=role;
+    }
 }

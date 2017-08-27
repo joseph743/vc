@@ -21,8 +21,8 @@ public class Localization implements Serializable{
     private String Height;
     private Barcode Bar;
 
-    public Localization(int ID, String Corridor, String Shelf, String Height, Barcode Bar) {
-        this.ID = ID;
+    public Localization( String Corridor, String Shelf, String Height, Barcode Bar) {
+        this.ID = this.hashCode();
         this.Corridor = Corridor;
         this.Shelf = Shelf;
         this.Height = Height;
@@ -72,7 +72,7 @@ public class Localization implements Serializable{
     @Override
     public int hashCode() {
         int hash = 5;
-        hash = 67 * hash + this.ID;
+        
         hash = 67 * hash + Objects.hashCode(this.Corridor);
         hash = 67 * hash + Objects.hashCode(this.Shelf);
         hash = 67 * hash + Objects.hashCode(this.Height);

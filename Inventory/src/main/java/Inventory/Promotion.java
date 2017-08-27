@@ -5,10 +5,21 @@
  */
 package Inventory;
 
+import java.io.Serializable;
+
 /**
  *
  * @author joseph
  */
-public class Vendor {
+public class Promotion implements Serializable{
+    
+    private boolean validate;
+    
+    
+    
+    
+    
+    
+    
     
 }

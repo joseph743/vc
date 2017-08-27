@@ -26,9 +26,10 @@ public class Product implements Serializable {
    private double Cost;
    private Unit mesure;
    private Location Loc;
+   private int qtite;
    
-    public Product(String code, String Name, Boolean Can_Be_Sold, Boolean Can_Be_Purshased, Product_Type Type, Product_Category Category, Barcode Bar, double Sale_price, double Cost, Unit mesure) {
-        this.code = code;
+    public Product(String Name, Boolean Can_Be_Sold, Boolean Can_Be_Purshased, Product_Type Type, Product_Category Category, Barcode Bar, double Sale_price, double Cost, Unit mesure, int qtite) {
+        this.ID=this.hashCode();
         this.Name = Name;
         this.Can_Be_Sold = Can_Be_Sold;
         this.Can_Be_Purshased = Can_Be_Purshased;
@@ -38,6 +39,8 @@ public class Product implements Serializable {
         this.Sale_price = Sale_price;
         this.Cost = Cost;
         this.mesure = mesure;
+        this.qtite=qtite;
+        this.code = Integer.valueOf(this.Type.getID())+""+this.ID;
     }
 
     public int getID() {
@@ -96,6 +99,15 @@ public class Product implements Serializable {
         this.ID = ID;
     }
 
+    
+    
+     public int getQuantity() {
+        return qtite;
+    }
+
+    public void setQuantity(int qtite) {
+        this.qtite = qtite;
+    }
     public void setName(String Name) {
         this.Name = Name;
     }
@@ -139,7 +151,7 @@ public class Product implements Serializable {
     @Override
     public int hashCode() {
         int hash = 5;
-        hash = 29 * hash + this.ID;
+        
         hash = 29 * hash + Objects.hashCode(this.code);
         hash = 29 * hash + Objects.hashCode(this.Name);
         hash = 29 * hash + Objects.hashCode(this.Can_Be_Sold);

@@ -19,8 +19,8 @@ public class Operation_type implements Serializable {
     private Address Default_Source;
     private Address Default_Dest;
 
-    public Operation_type(int ID, String Name, Address Default_Source, Address Default_Dest) {
-        this.ID = ID;
+    public Operation_type(String Name, Address Default_Source, Address Default_Dest) {
+        this.ID = this.hashCode();
         this.Name = Name;
         this.Default_Source = Default_Source;
         this.Default_Dest = Default_Dest;
@@ -61,10 +61,9 @@ public class Operation_type implements Serializable {
     @Override
     public int hashCode() {
         int hash = 3;
-        hash = 71 * hash + this.ID;
+       
         hash = 71 * hash + Objects.hashCode(this.Name);
-        hash = 71 * hash + Objects.hashCode(this.Default_Source);
-        hash = 71 * hash + Objects.hashCode(this.Default_Dest);
+      
         return hash;
     }
 

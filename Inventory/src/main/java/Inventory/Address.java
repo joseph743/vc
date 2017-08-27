@@ -28,7 +28,7 @@ import java.util.Objects;
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 17 * hash + this.ID;
+        
         hash = 17 * hash + Objects.hashCode(this.Street);
         hash = 17 * hash + Objects.hashCode(this.City);
         hash = 17 * hash + Objects.hashCode(this.State);
@@ -154,8 +154,8 @@ import java.util.Objects;
         this.Note = Note;
     }
     
-    public Address(int ID, String Street, String City, String State, int ZIP, String Country, String Email, String Contact, String Note) {
-        this.ID = ID;
+    public Address(String Street, String City, String State, int ZIP, String Country, String Email, String Contact, String Note) {
+        this.ID = this.hashCode();
         this.Street = Street;
         this.City = City;
         this.State = State;

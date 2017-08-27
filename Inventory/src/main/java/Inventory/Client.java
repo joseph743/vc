@@ -12,31 +12,49 @@ import java.util.Objects;
  *
  * @author joseph
  */
-public class Individual extends Person implements Serializable{
+public class Client extends Person implements Serializable{
  
-private int ID;    
+   
 private String job_Position;
 private String Title; // Miss , MR , Mrs...
+private String Latitude;
+private String Longitude;
 
-    public Individual(int ID,String Name, String Phone, String Mobile, String Fax, String Email, String job_Position,String Title ) {
-        super(ID, Name, Phone, Mobile, Fax, Email);
+
+    public Client(String Name, String Phone, String Mobile, String Fax, String Email, String job_Position,String Title,String Username,String Password,String Latitude, String Longitude,Role role ) {
+        super( Name, Phone, Mobile, Fax, Email,Username,Password,role);
         this.job_Position=job_Position;
         this.Title=Title;
+        this.Latitude=Latitude;
+        this.Longitude=Longitude;
     }
 
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String Name) {
+        this.Name = Name;
+    }
+
+   
     
-    public void setID(int ID){
-     
-        
-        this.ID=ID;
+    public String getLongitude(){
+        return this.Longitude;
     }
     
-    public int getID(){
-        
-        
-        return this.ID;
-        
+    public void setLongitude(String Longitude){
+        this.Longitude=Longitude;
     }
+    
+     public String getLatitude(){
+        return this.Latitude;
+    }
+    
+    public void setLatitude(String Latitude){
+        this.Latitude=Latitude;
+    }
+   
     public void setJob_Position(String job_Position) {
         this.job_Position = job_Position;
     }
@@ -68,7 +86,7 @@ private String Title; // Miss , MR , Mrs...
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final Individual other = (Individual) obj;
+        final Client other = (Client) obj;
         if (!Objects.equals(this.job_Position, other.job_Position)) {
             return false;
         }

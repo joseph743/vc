@@ -20,7 +20,7 @@ public class Product_Category implements Serializable{ //Juices , lamps...
     private Product_Category parent; //parent category
 
     public Product_Category( String Name, Product_Category parent) {
-        
+        this.ID=this.hashCode();
         this.Name = Name;
         this.parent=parent;
     }
@@ -53,7 +53,7 @@ public class Product_Category implements Serializable{ //Juices , lamps...
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 73 * hash + this.ID;
+        
         hash = 73 * hash + Objects.hashCode(this.Name);
         hash = 73 * hash + Objects.hashCode(this.parent);
         return hash;

@@ -11,10 +11,10 @@ import java.io.Serializable;
  *
  * @author joseph
  */
-public class Supplier extends Person implements Serializable {
+public class Inventory_Manager extends Person implements Serializable {
     
-    public Supplier(int ID,String Name,  String Phone, String Mobile, String Fax, String Email) {
-        super(ID,Name, Phone, Mobile, Fax, Email);
+    public Inventory_Manager(String Name,  String Phone, String Mobile, String Fax, String Email, String Username,Role role, String Password) {
+        super(Name, Phone, Mobile, Fax, Email,Username,Password,role);
         
     }
 

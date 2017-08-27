@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Objects;
+import java.time.Instant;
 
 /**
  *
@@ -22,13 +23,14 @@ public class Operation implements Serializable{
     private Address Source;
     private Address Destination;
     private Date Scheduled_Date;
+    private Instant issue_date;
     private Operation_type Opt;
     private HashMap<Product,Integer> products_demand; //integer is the quantity/
     private Operation_State State;
     private String Reference_Sequence;
-
-    public Operation(int ID, Person peron, Address Source, Address Destination, Date Scheduled_Date, Operation_type Opt, HashMap<Product,Integer> products_demand, Operation_State State, String Reference_Sequence) {
-        this.ID = ID;
+    
+    public Operation( Person peron, Address Source, Address Destination, Date Scheduled_Date, Operation_type Opt, HashMap<Product,Integer> products_demand, Operation_State State, String Reference_Sequence) {
+        this.ID =Integer.valueOf(Opt.getID()+""+this.hashCode());
         this.peron = peron;
         this.Source = Source;
         this.Destination = Destination;
@@ -37,6 +39,7 @@ public class Operation implements Serializable{
         this.products_demand = products_demand;
         this.State = State;
         this.Reference_Sequence = Reference_Sequence;
+        this.issue_date=Instant.now();
     }
 
     public int getID() {
@@ -114,12 +117,12 @@ public class Operation implements Serializable{
     @Override
     public int hashCode() {
         int hash = 5;
-        hash = 41 * hash + this.ID;
+       
         hash = 41 * hash + Objects.hashCode(this.peron);
         hash = 41 * hash + Objects.hashCode(this.Source);
         hash = 41 * hash + Objects.hashCode(this.Destination);
         hash = 41 * hash + Objects.hashCode(this.Scheduled_Date);
-        hash = 41 * hash + Objects.hashCode(this.Opt);
+       
         hash = 41 * hash + Objects.hashCode(this.products_demand);
         hash = 41 * hash + Objects.hashCode(this.State);
         hash = 41 * hash + Objects.hashCode(this.Reference_Sequence);
