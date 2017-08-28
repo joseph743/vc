@@ -50,6 +50,8 @@ public class Person implements Serializable{
         hash = 19 * hash + Objects.hashCode(this.Mobile);
         hash = 19 * hash + Objects.hashCode(this.Fax);
         hash = 19 * hash + Objects.hashCode(this.Emai);
+        hash = 19 * hash + Objects.hashCode(this.Username);
+        hash = 19 * hash + Objects.hashCode(this.Password);
         return hash;
     }
 
