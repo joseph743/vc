@@ -81,9 +81,9 @@ public class LocationResource {
     @DELETE
     @Path("/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Location deleteLocation(@PathParam("id") String id) {
-        Location LocationResponse = Location_Service.deleteLocation(id);
-        return LocationResponse;
+    public void deleteLocation(@PathParam("id") String id) {
+        Location_Service.deleteLocation(id);
+       
     }
 
     

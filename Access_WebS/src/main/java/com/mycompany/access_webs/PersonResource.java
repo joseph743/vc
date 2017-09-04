@@ -39,6 +39,7 @@ public class PersonResource {
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
     public Person createAddress(Person Per) {
+        
         Person PersonResponse = Person_Service.CreatePerson(Per);
         return PersonResponse;
     }
@@ -81,11 +82,12 @@ public class PersonResource {
     @DELETE
     @Path("/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Person deletePerson(@PathParam("id") String id) {
-        Person PersonResponse = Person_Service.deletePerson(id);
-        return PersonResponse;
+    public void deletePerson(@PathParam("id") String id) {
+         Person_Service.deletePerson(id);
+        
     }
 
+    
 
 
 

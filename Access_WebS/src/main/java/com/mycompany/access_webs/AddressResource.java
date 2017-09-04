@@ -76,9 +76,9 @@ public class AddressResource {
     @DELETE
     @Path("/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Address deleteAddress(@PathParam("id") String id) {
-        Address AddressResponse = AddressService.deleteAddress(id);
-        return AddressResponse;
+    public void deleteAddress(@PathParam("id") String id) {
+        AddressService.deleteAddress(id);
+        
     }
 
     

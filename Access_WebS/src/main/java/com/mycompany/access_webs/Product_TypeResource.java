@@ -81,9 +81,9 @@ public class Product_TypeResource {
     @DELETE
     @Path("/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Product_Type deleteProduct_Type(@PathParam("id") String id) {
-        Product_Type Product_TypeResponse = Product_Type_Service.deleteProduct_Type(id);
-        return Product_TypeResponse;
+    public void deleteProduct_Type(@PathParam("id") String id) {
+        Product_Type_Service.deleteProduct_Type(id);
+        
     }
 
 

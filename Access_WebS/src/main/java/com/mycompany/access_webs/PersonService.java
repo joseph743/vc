@@ -6,10 +6,12 @@
 package com.mycompany.access_webs;
 
 import Inventory.Person;
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.tasks.Task;
 import java.util.List;
@@ -31,6 +33,7 @@ class PersonService {
     static DatabaseReference PersonRef;
    static  DatabaseReference ref;
    List<Person> Persones;
+    static Person per;
     
     PersonService() {
         try {
@@ -44,7 +47,7 @@ class PersonService {
     }
     
     
-    public static List<Person> getAllPersones(){
+    public static List<Person> getAllPersons(){
         
     final List<Person> Persones=new ArrayList<Person>();    
         
@@ -69,9 +72,37 @@ return Persones;
     
     
       public static Person getPersonForId(String id) {
+        Query mQuery = ref.equalTo(id);
         
+mQuery.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot,  String s) {
+                per= (Person) dataSnapshot.getValue();
+                
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot ds, String string) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot ds) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot ds, String string) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+            @Override
+            public void onCancelled(DatabaseError de) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+ });
           
-            
+          return per;  
     }
     
       
@@ -89,6 +120,14 @@ return Persones;
     }
       
       
+      public static void Login(String Username, String Password, String Role){
+          
+          
+          
+          
+      }
+      
+      
  
       public static Person updatePerson(Person Per) {
           
@@ -101,7 +140,7 @@ return Persones;
         
       
  
-    public static Person deletePerson(String id) {
+    public static void deletePerson(String id) {
        
         DatabaseReference  DelRef= PersonRef.child(id);
         

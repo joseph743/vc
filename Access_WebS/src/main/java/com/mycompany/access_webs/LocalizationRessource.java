@@ -78,9 +78,9 @@ public class LocalizationRessource {
     @DELETE
     @Path("/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Localization deleteLocalization(@PathParam("id") String id) {
-        Localization LocalizationResponse = Localization_Service.deleteLocalization(id);
-        return LocalizationResponse;
+    public void deleteLocalization(@PathParam("id") String id) {
+         Localization_Service.deleteLocalization(id);
+        
     }
 
 

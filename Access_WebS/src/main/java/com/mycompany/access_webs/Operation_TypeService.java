@@ -6,10 +6,12 @@
 package com.mycompany.access_webs;
 
 import Inventory.Operation_type;
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.tasks.Task;
 import java.util.List;
@@ -31,7 +33,7 @@ class Operation_typeService {
     static DatabaseReference Operation_typeRef;
    static  DatabaseReference ref;
    List<Operation_type> Operation_typees;
-    
+    static Operation_type per;
     Operation_typeService() {
         try {
             this.test = new FireBase_DataBase();
@@ -44,7 +46,7 @@ class Operation_typeService {
     }
     
     
-    public static List<Operation_type> getAllOperation_typees(){
+    public static List<Operation_type> getAllOperation_types(){
         
     final List<Operation_type> Operation_typees=new ArrayList<Operation_type>();    
         
@@ -69,7 +71,37 @@ return Operation_typees;
     
     
       public static Operation_type getOperation_typeForId(String id) {
+        Query mQuery = ref.equalTo(id);
         
+mQuery.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot,  String s) {
+                per= (Operation_type) dataSnapshot.getValue();
+                
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot ds, String string) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot ds) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot ds, String string) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+            @Override
+            public void onCancelled(DatabaseError de) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+ });
+          
+          return per; 
           
             
     }
@@ -101,7 +133,7 @@ return Operation_typees;
         
       
  
-    public static Operation_type deleteOperation_type(String id) {
+    public static void deleteOperation_type(String id) {
        
         DatabaseReference  DelRef= Operation_typeRef.child(id);
         

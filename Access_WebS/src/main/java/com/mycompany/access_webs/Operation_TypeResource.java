@@ -81,9 +81,9 @@ public class Operation_TypeResource {
     @DELETE
     @Path("/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Operation_type deleteOperation_type(@PathParam("id") String id) {
-        Operation_type Operation_typeResponse = Operation_type_Service.deleteOperation_type(id);
-        return Operation_typeResponse;
+    public void deleteOperation_type(@PathParam("id") String id) {
+        Operation_type_Service.deleteOperation_type(id);
+        
     }
 
     

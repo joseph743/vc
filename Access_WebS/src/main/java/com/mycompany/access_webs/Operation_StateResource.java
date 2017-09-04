@@ -81,9 +81,9 @@ public class Operation_StateResource {
     @DELETE
     @Path("/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Operation_State deleteOperation_State(@PathParam("id") String id) {
-        Operation_State Operation_StateResponse = Operation_State_Service.deleteOperation_State(id);
-        return Operation_StateResponse;
+    public void deleteOperation_State(@PathParam("id") String id) {
+       Operation_State_Service.deleteOperation_State(id);
+        
     }
 
     

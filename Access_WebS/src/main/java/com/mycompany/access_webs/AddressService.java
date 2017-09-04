@@ -6,10 +6,12 @@
 package com.mycompany.access_webs;
 
 import Inventory.Address;
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.tasks.Task;
 import java.util.List;
@@ -31,6 +33,7 @@ class AddressService {
     static DatabaseReference AddressRef;
    static  DatabaseReference ref;
    List<Address> Addresses;
+   static Address per;
     
     AddressService() {
         try {
@@ -70,7 +73,37 @@ return Addresses;
     
       public static Address getAddressForId(String id) {
         
+          Query mQuery = ref.equalTo(id);
+        
+mQuery.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot,  String s) {
+                per= (Address) dataSnapshot.getValue();
+                
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot ds, String string) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot ds) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot ds, String string) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+            @Override
+            public void onCancelled(DatabaseError de) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+ });
           
+          return per; 
             
     }
     
@@ -101,7 +134,7 @@ return Addresses;
         
       
  
-    public static Address deleteAddress(String id) {
+    public static void deleteAddress(String id) {
        
         DatabaseReference  DelRef= AddressRef.child(id);
         

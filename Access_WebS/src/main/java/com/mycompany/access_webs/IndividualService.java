@@ -5,11 +5,14 @@
  */
 package com.mycompany.access_webs;
 
-import Inventory.Individual;
+import Inventory.Person;
+import Inventory.Person;
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.tasks.Task;
 import java.util.List;
@@ -30,30 +33,31 @@ class IndividualService {
     FireBase_DataBase test;
     static DatabaseReference IndividualRef;
    static  DatabaseReference ref;
-   List<Individual> Individuales;
+   List<Person> Individuales;
+   static Person per;
     
     IndividualService() {
         try {
             this.test = new FireBase_DataBase();
              FirebaseDatabase database = FirebaseDatabase.getInstance();
              ref = database.getReference("");
-             IndividualRef = ref.child("Individual");
+             IndividualRef = ref.child("Person");
         } catch (FileNotFoundException ex) {
             Logger.getLogger(IndividualService.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
     
-    public static List<Individual> getAllIndividuales(){
+    public static List<Person> getAllIndividuals(){
         
-    final List<Individual> Individuales=new ArrayList<Individual>();    
+    final List<Person> Individuales=new ArrayList<Person>();    
         
 // Attach a listener to read the data at our posts reference
 IndividualRef.addValueEventListener(new ValueEventListener() {
     
     @Override
     public void onDataChange(DataSnapshot dataSnapshot) {
-        Individual post = dataSnapshot.getValue(Individual.class);
+        Person post = dataSnapshot.getValue(Person.class);
         Individuales.add(post);
     }
 
@@ -61,16 +65,46 @@ IndividualRef.addValueEventListener(new ValueEventListener() {
     public void onCancelled(DatabaseError databaseError) {
         System.out.println("The read failed: " + databaseError.getCode());
     }
-});
+        });
         
 return Individuales;
     }
     
     
     
-      public static Individual getIndividualForId(String id) {
+      public static Person getIndividualForId(String id) {
         
+          Query mQuery = ref.equalTo(id);
+        
+mQuery.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot,  String s) {
+                per= (Person) dataSnapshot.getValue();
+                
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot ds, String string) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot ds) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot ds, String string) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+            @Override
+            public void onCancelled(DatabaseError de) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+ });
           
+          return per; 
             
     }
     
@@ -79,9 +113,9 @@ return Individuales;
       
       
       
-      public static Individual CreateIndividual(Individual Per) {
+      public static Person CreateIndividual(Person Per) {
         
-         Map<Integer,Individual> Individuales=new HashMap<Integer,Individual>(); //Integer for the ID;
+         Map<Integer,Person> Individuales=new HashMap<Integer,Person>(); //Integer for the ID;
          Individuales.put(Per.getID(), Per);
          
        IndividualRef.setValue(Individuales);
@@ -90,7 +124,7 @@ return Individuales;
       
       
  
-      public static Individual updateIndividual(Individual Per) {
+      public static Person updateIndividual(Person Per) {
           
           DatabaseReference NewRef = IndividualRef.child(String.valueOf(Per.getID()));
         Map<String, Object> PerUpdates = new HashMap<String, Object >();
@@ -101,7 +135,7 @@ return Individuales;
         
       
  
-    public static Individual deleteIndividual(String id) {
+    public static void deleteIndividual(String id) {
        
         DatabaseReference  DelRef= IndividualRef.child(id);
         

@@ -12,7 +12,7 @@ package com.mycompany.access_webs;
 
 
 
-import Inventory.Individual;
+import Inventory.Person;
 import java.util.List;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
@@ -38,8 +38,8 @@ public class IndividualResource {
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public Individual createAddress(Individual Per) {
-        Individual IndividualResponse = Individual_Service.CreateIndividual(Per);
+    public Person createAddress(Person Per) {
+        Person IndividualResponse = Individual_Service.CreateIndividual(Per);
         return IndividualResponse;
     }
     
@@ -48,8 +48,8 @@ public class IndividualResource {
     // CRUD -- READ operation
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Individual> getAllIndividuals() {
-        List<Individual> IndividualList = Individual_Service.getAllIndividuals();
+    public List<Person> getAllIndividuals() {
+        List<Person> IndividualList = Individual_Service.getAllIndividuals();
         return IndividualList;
     }
     
@@ -59,8 +59,8 @@ public class IndividualResource {
     @GET
     @Path("/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Individual getIndividualForId(@PathParam("id") String id) {
-        Individual Per = Individual_Service.getIndividualForId(id);
+    public Person getIndividualForId(@PathParam("id") String id) {
+        Person Per = Individual_Service.getIndividualForId(id);
        
         return Per;
     }
@@ -72,8 +72,8 @@ public class IndividualResource {
     @PUT
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public Individual updateIndividual(Individual Per) {
-        Individual IndividualResponse = Individual_Service.updateIndividual(Per);
+    public Person updateIndividual(Person Per) {
+        Person IndividualResponse = Individual_Service.updateIndividual(Per);
         return IndividualResponse;
     }
 
@@ -81,9 +81,9 @@ public class IndividualResource {
     @DELETE
     @Path("/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Individual deleteIndividual(@PathParam("id") String id) {
-        Individual IndividualResponse = Individual_Service.deleteIndividual(id);
-        return IndividualResponse;
+    public void deleteIndividual(@PathParam("id") String id) {
+        Individual_Service.deleteIndividual(id);
+        
     }
 
 

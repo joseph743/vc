@@ -38,7 +38,7 @@ public class EntrepotResource {
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
     public Entrepot createWarehouse(Entrepot Entre) {
-        Entrepot EntrepotResponse = EntrepotService.CreateWarehouse(Entre);
+        Entrepot EntrepotResponse = EntrepotService.CreateEntrepot(Entre);
         return EntrepotResponse;
     }
     
@@ -80,9 +80,9 @@ public class EntrepotResource {
     @DELETE
     @Path("/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Entrepot deleteEntrepot(@PathParam("id") String id) {
-        Entrepot EntrepotResponse = EntrepotService.deleteEntrepot(id);
-        return EntrepotResponse;
+    public void deleteEntrepot(@PathParam("id") String id) {
+       EntrepotService.deleteEntrepot(id);
+        
     }
 
     

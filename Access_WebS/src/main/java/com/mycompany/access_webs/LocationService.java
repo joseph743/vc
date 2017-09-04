@@ -6,10 +6,12 @@
 package com.mycompany.access_webs;
 
 import Inventory.Location;
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.tasks.Task;
 import java.util.List;
@@ -31,6 +33,7 @@ class LocationService {
     static DatabaseReference LocationRef;
    static  DatabaseReference ref;
    List<Location> Locationes;
+   static Location per;
     
     LocationService() {
         try {
@@ -44,7 +47,7 @@ class LocationService {
     }
     
     
-    public static List<Location> getAllLocationes(){
+    public static List<Location> getAllLocations(){
         
     final List<Location> Locationes=new ArrayList<Location>();    
         
@@ -71,7 +74,37 @@ return Locationes;
       public static Location getLocationForId(String id) {
         
           
-            
+            Query mQuery = ref.equalTo(id);
+        
+mQuery.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot,  String s) {
+                per= (Location) dataSnapshot.getValue();
+                
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot ds, String string) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot ds) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot ds, String string) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+            @Override
+            public void onCancelled(DatabaseError de) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+ });
+          
+          return per; 
     }
     
       
@@ -101,7 +134,7 @@ return Locationes;
         
       
  
-    public static Location deleteLocation(String id) {
+    public static void deleteLocation(String id) {
        
         DatabaseReference  DelRef= LocationRef.child(id);
         

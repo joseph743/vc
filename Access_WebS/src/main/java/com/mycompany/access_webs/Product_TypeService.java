@@ -6,10 +6,12 @@
 package com.mycompany.access_webs;
 
 import Inventory.Product_Type;
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.tasks.Task;
 import java.util.List;
@@ -31,6 +33,7 @@ class Product_TypeService {
     static DatabaseReference Product_TypeRef;
    static  DatabaseReference ref;
    List<Product_Type> Product_Typees;
+   static Product_Type per;
     
     Product_TypeService() {
         try {
@@ -44,7 +47,7 @@ class Product_TypeService {
     }
     
     
-    public static List<Product_Type> getAllProduct_Typees(){
+    public static List<Product_Type> getAllProduct_Types(){
         
     final List<Product_Type> Product_Typees=new ArrayList<Product_Type>();    
         
@@ -70,9 +73,40 @@ return Product_Typees;
     
       public static Product_Type getProduct_TypeForId(String id) {
         
+           Query mQuery = ref.equalTo(id);
+        
+mQuery.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot,  String s) {
+                per= (Product_Type) dataSnapshot.getValue();
+                
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot ds, String string) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot ds) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot ds, String string) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+            @Override
+            public void onCancelled(DatabaseError de) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+ });
           
+          return per;  
+    }    
             
-    }
+    
     
       
       
@@ -101,7 +135,7 @@ return Product_Typees;
         
       
  
-    public static Product_Type deleteProduct_Type(String id) {
+    public static void deleteProduct_Type(String id) {
        
         DatabaseReference  DelRef= Product_TypeRef.child(id);
         
