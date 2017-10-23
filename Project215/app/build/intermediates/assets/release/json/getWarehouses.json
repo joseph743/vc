@@ -1,0 +1,16 @@
+{
+  "warehouses": [
+    {
+      "id": 0,
+      "name": "Select Warehouse"
+    },
+    {
+      "id": 1,
+      "name": "Warehouse A"
+    },
+    {
+      "id": 2,
+      "name": "Warehouse B"
+    }
+  ]
+}

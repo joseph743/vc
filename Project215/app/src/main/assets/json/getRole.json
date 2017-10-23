@@ -1,0 +1,28 @@
+{
+  "role": [
+    {
+      "id": 0,
+      "name": "Select Role"
+    },
+    {
+      "id": 1,
+      "name": "Client"
+    },
+    {
+      "id": 2,
+      "name": "Inventory Manager"
+    },
+    {
+      "id": 3,
+      "name": "Warehouse Manager"
+    },
+    {
+      "id": 4,
+      "name": "Driver"
+    },
+    {
+      "id": 5,
+      "name": "Driver Manager"
+    }
+  ]
+}

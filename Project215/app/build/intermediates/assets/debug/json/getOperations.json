@@ -1,0 +1,144 @@
+{
+  "operations": [
+    {
+      "id": 1,
+      "type": "external",
+      "source_name": "Warhouse B",
+      "source_id": 1,
+      "driver_id":1,
+      "driver_name":"Jad Driver",
+      "start_time":"4:00 PM",
+      "end_time":"6:00 PM",
+      "destination_name": "Fahed",
+      "destination_id": 2,
+      "destination_latitude" : "34.5",
+      "destination_longitude" : "35.5",
+      "status": "Pending",
+      "date": "23-8-2017",
+      "products": [
+        {
+          "products_id": 1,
+          "products_name": "Cocacola light",
+          "qty": 3
+        },
+        {
+          "products_id": 2,
+          "products_name": "Fine Fluffy",
+          "qty": 23
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "external",
+      "source_name": "Warhouse B",
+      "source_id": 1,
+      "driver_id":1,
+      "driver_name":"Jad Driver",
+      "start_time":"4:00 PM",
+      "end_time":"6:00 PM",
+      "destination_name": "Fahed",
+      "destination_id": 2,
+      "destination_latitude" : "33.88894",
+      "destination_longitude" : "35.49442",
+      "status": "Transferring",
+      "date": "24-8-2017",
+      "products": [
+        {
+          "products_id": 1,
+          "products_name": "Cocacola light",
+          "qty": 3
+        },
+        {
+          "products_id": 2,
+          "products_name": "Fine Fluffy",
+          "qty": 23
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "source_name": "Warhouse A",
+      "source_id": 1,
+      "type": "internal",
+      "destination_name": "Warhouse B",
+      "destination_id": 1,
+      "destination_latitude" : "34.5",
+      "destination_longitude" : "35.5",
+      "driver_id":"",
+      "driver_name":"",
+      "start_time":"",
+      "end_time":"",
+      "status": "Pending",
+      "date": "23-8-2017",
+      "products": [
+        {
+          "products_id": 1,
+          "products_name": "Cocacola light",
+          "qty": 3
+        },
+        {
+          "products_id": 2,
+          "products_name": "Fine Fluffy",
+          "qty": 23
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "source_name": "Warhouse A",
+      "source_id": 1,
+      "type": "external",
+      "destination_name": "Fahed",
+      "destination_id": 2,
+      "destination_latitude" : "34.5",
+      "destination_longitude" : "35.5",
+      "status": "Completed",
+      "driver_id":1,
+      "driver_name":"Jad Driver",
+      "start_time":"7:00 AM",
+      "end_time":"-",
+      "date": "23-8-2017",
+      "products": [
+        {
+          "products_id": 1,
+          "products_name": "Cocacola light",
+          "qty": 3
+        },
+        {
+          "products_id": 2,
+          "products_name": "Fine Fluffy",
+          "qty": 23
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "source_name": "Warhouse B",
+      "source_id": 1,
+      "type": "external",
+      "destination_name": "Fahed",
+      "destination_id": 2,
+      "destination_latitude" : "34.5",
+      "destination_longitude" : "35.5",
+      "status": "packaging",
+      "driver_id":1,
+      "driver_name":"Jad Driver",
+      "start_time":"10:00 AM",
+      "end_time":"11:00 AM",
+      "date": "30-10-2017",
+      "products": [
+        {
+          "products_id": 1,
+          "products_name": "Cocacola light",
+          "qty": 3
+        },
+        {
+          "products_id": 2,
+          "products_name": "Fine Fluffy",
+          "qty": 23
+        }
+      ]
+    }
+  ]
+}

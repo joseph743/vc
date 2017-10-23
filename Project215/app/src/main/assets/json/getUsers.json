@@ -1,0 +1,79 @@
+// "barcode": "6251001211634",
+{
+  "users": [
+    {
+      "id": 0,
+      "name": "Select User"
+    },
+    {
+      "id": 1,
+      "role_id": 1,
+      "role_name": "Client",
+      "name": "Fahed",
+      "email": "info@fahed.com",
+      "mobile": "78980767",
+      "phone": "04234212",
+      "fax": "04234213",
+      "city": "Furn Al cheback",
+      "address": "Furn Al cheback , facing total station",
+      "latitude": "37.8",
+      "longitude": "39.0"
+    },
+    {
+      "id": 2,
+      "role_id": 2,
+      "role_name": "Inventory Manager",
+      "name": "Jad Gerges",
+      "email": "jad.gerges@isae.edu.lb",
+      "mobile": "70621560",
+      "phone": "",
+      "fax": "",
+      "city": "",
+      "address": "",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": 3,
+      "role_id": 3,
+      "role_name": "Warehouse Manager",
+      "name": "Jad Gerges 2",
+      "email": "jad.gerges2@isae.edu.lb",
+      "mobile": "70621562",
+      "phone": "",
+      "fax": "",
+      "city": "",
+      "address": "",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": 4,
+      "role_id": 4,
+      "role_name": "Driver",
+      "name": "Jad Driver",
+      "email": "jadgerges0@gmail.com",
+      "mobile": "70621569",
+      "phone": "",
+      "fax": "",
+      "city": "",
+      "address": "",
+      "latitude": "",
+      "longitude": ""
+    }, {
+      "id": 5,
+      "role_id": 5,
+      "role_name": "Driver Manager",
+      "name": "Jad Driver Manager",
+      "email": "jadgerges9@gmail.com",
+      "mobile": "70621569",
+      "phone": "",
+      "fax": "",
+      "city": "",
+      "address": "",
+      "latitude": "",
+      "longitude": ""
+    }
+  ]
+}
+

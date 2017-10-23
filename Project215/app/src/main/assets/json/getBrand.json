@@ -1,0 +1,19 @@
+{
+  "brand": [
+    {
+      "id": 0,
+      "name": "Select Brand",
+      "reference": ""
+    },
+    {
+      "id": 1,
+      "name": "Cola",
+      "reference": 3306
+    },
+    {
+      "id": 2,
+      "name": "Fine",
+      "reference": 5900
+    }
+  ]
+}

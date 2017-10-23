@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:project215="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+        <!-- warehouse management -->
+        <app.com.project215.widgets.CustomTextView
+            android:id="@+id/tv_page_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/black"
+            android:gravity="left|center"
+            android:paddingLeft="20dp"
+            android:text="Products Management"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dp_16"
+            project215:customFont="@string/font_regular" />
+
+        <ImageView
+            android:id="@+id/img_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_delete_forever_white_36dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/parent_of_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <!-- contain all views + create account -->
+        <LinearLayout
+            android:id="@+id/ll_bigParent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- product type spinner -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:id="@+id/tv_product_type"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:padding="10dp"
+                        android:text="Product Type"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:id="@+id/tv_static_product_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="Service"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+                </LinearLayout>
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="@drawable/edittext_bg"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<app.com.project215.widgets.CustomTextView-->
+                        <!--android:id="@+id/tv_product_type"-->
+                        <!--android:layout_width="100dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:text="Product Type"-->
+                        <!--android:textColor="@android:color/black"-->
+                        <!--android:textSize="14sp"-->
+                        <!--project215:customFont="@string/font_regular" />-->
+
+                    <!--<FrameLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@drawable/edittext_bg">-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/sp_product_type"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="center_vertical|center|start"-->
+                            <!--android:padding="10dp" />-->
+
+                        <!--<app.com.project215.widgets.CustomTextView-->
+                            <!--android:id="@+id/tv_select_product_type"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="1dp"-->
+                            <!--android:background="@android:color/white"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Select Product Type"-->
+                            <!--android:textColor="@android:color/black"-->
+                            <!--android:textSize="14sp"-->
+                            <!--android:visibility="invisible" />-->
+                    <!--</FrameLayout>-->
+                <!--</LinearLayout>-->
+
+                <!-- brand spinner -->
+
+                <LinearLayout
+                    android:id="@+id/ll_brand"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:orientation="horizontal">
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:id="@+id/tv_brand"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Brand"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg">
+
+                        <Spinner
+                            android:id="@+id/sp_brand"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|center|start"
+                            android:padding="10dp" />
+
+                        <app.com.project215.widgets.CustomTextView
+                            android:id="@+id/tv_select_brand"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:text="Select Brand"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:visibility="invisible" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <!-- code -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:id="@+id/tv_code"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:padding="10dp"
+                        android:text="Code"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:id="@+id/tv_static_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+
+                    <app.com.project215.widgets.CustomEditText
+                        android:id="@+id/ed_code"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:inputType="number"
+                        android:paddingBottom="10dp"
+
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+
+                </LinearLayout>
+
+                <!-- category spinner -->
+                <LinearLayout
+                    android:id="@+id/ll_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:orientation="horizontal">
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:id="@+id/tv_category"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Category"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg">
+
+                        <Spinner
+                            android:id="@+id/sp_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|center|start"
+                            android:padding="10dp" />
+
+                        <app.com.project215.widgets.CustomTextView
+                            android:id="@+id/tv_select_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:text="Select Category"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:visibility="invisible" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <!-- name -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:padding="10dp"
+                        android:text="Name"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+
+                    <app.com.project215.widgets.CustomEditText
+                        android:id="@+id/ed_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:inputType="textPersonName"
+                        android:padding="10dp"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+                </LinearLayout>
+
+
+                <!-- Qty -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:id="@+id/tv_qty"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:padding="10dp"
+                        android:text="Quantity"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+
+                    <app.com.project215.widgets.CustomEditText
+                        android:id="@+id/ed_qty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+                </LinearLayout>
+
+
+
+                <!-- barcode -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:id="@+id/tv_barcode"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:padding="10dp"
+                        android:text="Barcode"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+
+                    <app.com.project215.widgets.CustomEditText
+                        android:id="@+id/ed_barcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+                </LinearLayout>
+
+                <!-- expiry date Picker -->
+
+                <LinearLayout
+                    android:id="@+id/ll_manifacture_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:orientation="horizontal">
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:id="@+id/tv_created_date"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:layout_marginBottom="2dp"
+                        android:padding="10dp"
+                        android:text="Date Of Manifacture"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:id="@+id/tv_selected_created_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:layout_marginBottom="2dp"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="Select Date"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+                </LinearLayout>
+
+                <!-- expiry date Picker -->
+
+                <LinearLayout
+                    android:id="@+id/ll_expiry_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:id="@+id/tv_expiry_date"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:padding="10dp"
+                        android:text="Expiry Date"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:id="@+id/tv_selected_expiry_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="Select Date"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+                </LinearLayout>
+
+
+                <!-- cost -->
+                <LinearLayout
+                    android:id="@+id/ll_cost"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:id="@+id/tv_cost"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:padding="10dp"
+                        android:text="Cost ($)"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+
+                    <app.com.project215.widgets.CustomEditText
+                        android:id="@+id/ed_cost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:inputType="numberDecimal"
+                        android:padding="10dp"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+                </LinearLayout>
+
+                <!--old price-->
+                <LinearLayout
+                    android:id="@+id/ll_old_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:id="@+id/tv_old_price"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:padding="10dp"
+                        android:text="Old Price ($)"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+
+                    <app.com.project215.widgets.CustomEditText
+                        android:id="@+id/ed_old_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:inputType="numberDecimal"
+                        android:padding="10dp"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+                </LinearLayout>
+
+                <!--discount-->
+                <LinearLayout
+                    android:id="@+id/ll_discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:id="@+id/tv_discount"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:padding="10dp"
+                        android:text="Discount (%)"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+
+                    <app.com.project215.widgets.CustomEditText
+                        android:id="@+id/ed_discount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:inputType="numberDecimal"
+                        android:padding="10dp"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+                </LinearLayout>
+
+
+
+                <!-- sale price -->
+                <LinearLayout
+                    android:id="@+id/ll_sale_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:id="@+id/tv_sale_price"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:padding="10dp"
+                        android:text="Sale Price ($)"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+
+                    <app.com.project215.widgets.CustomEditText
+                        android:id="@+id/ed_sale_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:inputType="numberDecimal"
+                        android:padding="10dp"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+                </LinearLayout>
+
+                <!-- weight -->
+                <LinearLayout
+                    android:id="@+id/ll_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:id="@+id/tv_weight"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:padding="10dp"
+                        android:text="Weight"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+
+                    <app.com.project215.widgets.CustomEditText
+                        android:id="@+id/ed_weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+                </LinearLayout>
+
+                <!-- description -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:orientation="horizontal">
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:id="@+id/tv_description"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+
+                        android:padding="10dp"
+                        android:text="Description"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+
+                    <app.com.project215.widgets.CustomEditText
+                        android:id="@+id/ed_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:background="@android:color/white"
+                        android:inputType="textMultiLine"
+                        android:padding="10dp"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+                </LinearLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            <!-- create product -->
+            <app.com.project215.widgets.CustomTextView
+                android:id="@+id/tv_create_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/black"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Create Product"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                project215:customFont="@string/font_regular" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/build/intermediates/res/merged/release/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/DowGroup/.android/build-cache/e9155377a700177de173fbe0a003927f644e385e/output/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/build/intermediates/res/merged/release/drawable-v21/notification_action_background.xml",
+        "source": "/Users/DowGroup/.android/build-cache/e9155377a700177de173fbe0a003927f644e385e/output/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/build/intermediates/res/merged/release/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/DowGroup/.android/build-cache/e9155377a700177de173fbe0a003927f644e385e/output/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/build/intermediates/res/merged/release/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/DowGroup/.android/build-cache/e9155377a700177de173fbe0a003927f644e385e/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    }
+]

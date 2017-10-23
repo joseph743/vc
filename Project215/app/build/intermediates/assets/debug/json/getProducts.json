@@ -1,0 +1,190 @@
+// "barcode": "6251001211634",
+{
+  "products": [
+    {
+      "id": 0,
+      "name":"Select Product"
+    },
+    {
+      "id": 1,
+      "name": "Coca-Cola Light",
+      "total_quantity": 2000,
+      "code": "330672",
+      "cost": 0.2,
+      "sale_price": 0.5,
+      "weight": "185ml",
+      "Product_type_name": "service",
+      "Product_type_id": 5,
+      "category_name": "Beverages",
+      "category_id": 1,
+      "created_date": "27-3-2015",
+      "expiry_date": "27-3-2018",
+      "brand_name": "Cola",
+      "brand_id": 1,
+      "brand_reference": 3306,
+      "description": "Coca-Cola Light, 185 ml",
+      "barcode": "5449000185525",
+      "location": [
+        {
+          "corridor": "c2",
+          "shelf": "d",
+          "height": "4",
+          "warehouse_name": "Warehouse A",
+          "quantity": 750
+        },
+        {
+          "corridor": "e7",
+          "shelf": "h",
+          "height": "4",
+          "warehouse_name": "Warehouse B",
+          "quantity": 1250
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Fine Fluffy",
+      "total_quantity": 3500,
+      "code": "590062",
+      "cost": 0.3,
+      "sale_price": 1,
+      "created_date": "27-3-2018",
+      "expiry_date": "27-3-2020",
+      "weight": "200 tissue",
+      "Product_type_name": "service",
+      "Product_type_id": 5,
+      "category_name": "Tissues",
+      "category_id": 3,
+      "brand_name": "Fine",
+      "brand_id": 2,
+      "brand_reference": 5900,
+      "description": "Fine Fluffy, 200 tissue",
+      "barcode" : "6251001211634",
+      "location": [
+        {
+          "corridor": "c2",
+          "shelf": "d",
+          "height": "1",
+          "warehouse_name": "Warehouse A",
+          "quantity": 1000
+        },
+        {
+          "corridor": "e7",
+          "shelf": "l",
+          "height": "4",
+          "warehouse_name": "Warehouse B",
+          "quantity": 2500
+        }
+      ]
+    },{
+      "id": 3,
+      "name": "Crush",
+      "total_quantity": 100,
+      "code": "330680",
+      "cost": 0.4,
+      "sale_price": "-",
+      "weight": "335ml",
+      "Product_type_name": "Sample",
+      "Product_type_id": 2,
+      "category_name": "Beverages",
+      "category_id": 1,
+      "created_date": "27-3-2013",
+      "expiry_date": "27-3-2019",
+      "brand_name": "Cola",
+      "brand_id": 1,
+      "brand_reference": 3306,
+      "description": "Crush, 335ml, Sample",
+      "barcode": "A12345678Aasd",
+      "location": [
+        {
+          "corridor": "c2",
+          "shelf": "d",
+          "height": "5",
+          "warehouse_name": "Warehouse A",
+          "quantity": 50
+        },
+        {
+          "corridor": "e7",
+          "shelf": "h",
+          "height": "5",
+          "warehouse_name": "Warehouse B",
+          "quantity": 50
+        }
+      ]
+    },{
+      "id": 3,
+      "name": "Easter Promotion",
+      "total_quantity": 200,
+      "code": "330678",
+      "cost": 20,
+      "old_price" : "60",
+      "discount" : "50",
+      "sale_price": "30",
+      "weight": "-",
+      "Product_type_name": "Promotion",
+      "Product_type_id": 1,
+      "category_name": "-",
+      "category_id": 0,
+      "created_date": "27-3-2013",
+      "expiry_date": "27-3-2019",
+      "brand_name": "Cola",
+      "brand_id": 1,
+      "brand_reference": 3306,
+      "description": "Easter Promotion, 2 Cola 330 ml + 2 Crush 330ml, discounted 50%",
+      "barcode": "A12345678Aasd",
+      "location": [
+        {
+          "corridor": "c2",
+          "shelf": "d",
+          "height": "5",
+          "warehouse_name": "Warehouse A",
+          "quantity": 100
+        },
+        {
+          "corridor": "e7",
+          "shelf": "h",
+          "height": "5",
+          "warehouse_name": "Warehouse B",
+          "quantity": 100
+        }
+      ]
+    },{
+      "id": 3,
+      "name": "Christmas promotion",
+      "total_quantity": 200,
+      "code": "330679",
+      "cost": 20,
+      "old_price" : "60",
+      "sale_price": "30",
+      "weight": "-",
+      "Product_type_name": "Promotion",
+      "Product_type_id": 1,
+      "category_name": "-",
+      "category_id": 0,
+      "created_date": "27-3-2013",
+      "expiry_date": "27-3-2019",
+      "brand_name": "Cola",
+      "brand_id": 1,
+      "brand_reference": 3306,
+      "description": "Christmas Promotion, 2 Cola 330 ml + 2 Free Crush 330ml",
+      "barcode": "A12345678A",
+      "location": [
+        {
+          "corridor": "c2",
+          "shelf": "d",
+          "height": "5",
+          "warehouse_name": "Warehouse A",
+          "quantity": 100
+        },
+        {
+          "corridor": "e7",
+          "shelf": "h",
+          "height": "5",
+          "warehouse_name": "Warehouse B",
+          "quantity": 100
+        }
+      ]
+    }
+  ]
+}
+

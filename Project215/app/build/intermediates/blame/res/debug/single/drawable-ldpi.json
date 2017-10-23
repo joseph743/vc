@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/build/intermediates/res/merged/debug/drawable-ldpi/ic_username_login.png",
+        "source": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/res/drawable-ldpi/ic_username_login.png"
+    },
+    {
+        "merged": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/build/intermediates/res/merged/debug/drawable-ldpi/ic_password_login.png",
+        "source": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/res/drawable-ldpi/ic_password_login.png"
+    },
+    {
+        "merged": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/build/intermediates/res/merged/debug/drawable-ldpi/ic_mobile.png",
+        "source": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/res/drawable-ldpi/ic_mobile.png"
+    },
+    {
+        "merged": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/build/intermediates/res/merged/debug/drawable-ldpi/ic_address.png",
+        "source": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/res/drawable-ldpi/ic_address.png"
+    },
+    {
+        "merged": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/build/intermediates/res/merged/debug/drawable-ldpi/logo_login.png",
+        "source": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/res/drawable-ldpi/logo_login.png"
+    },
+    {
+        "merged": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/build/intermediates/res/merged/debug/drawable-ldpi/ic_gendar.png",
+        "source": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/res/drawable-ldpi/ic_gendar.png"
+    },
+    {
+        "merged": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/build/intermediates/res/merged/debug/drawable-ldpi/ic_country.png",
+        "source": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/res/drawable-ldpi/ic_country.png"
+    },
+    {
+        "merged": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/build/intermediates/res/merged/debug/drawable-ldpi/ic_arrow_down.png",
+        "source": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/res/drawable-ldpi/ic_arrow_down.png"
+    },
+    {
+        "merged": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/build/intermediates/res/merged/debug/drawable-ldpi/ic_city.png",
+        "source": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/res/drawable-ldpi/ic_city.png"
+    },
+    {
+        "merged": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/build/intermediates/res/merged/debug/drawable-ldpi/ic_email.png",
+        "source": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/res/drawable-ldpi/ic_email.png"
+    },
+    {
+        "merged": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/build/intermediates/res/merged/debug/drawable-ldpi/ic_arrow.png",
+        "source": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/res/drawable-ldpi/ic_arrow.png"
+    }
+]

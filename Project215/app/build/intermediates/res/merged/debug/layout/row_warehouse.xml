@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    xmlns:project215="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
+
+    <app.com.project215.widgets.CustomTextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="left|center"
+        android:paddingLeft="20dp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dp_16"
+        project215:customFont="@string/font_regular" />
+
+    <app.com.project215.widgets.CustomTextView
+        android:id="@+id/dash"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="left|center"
+        android:text=" - "
+        android:paddingLeft="20dp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dp_16"
+        project215:customFont="@string/font_regular" />
+
+    <app.com.project215.widgets.CustomTextView
+        android:id="@+id/tv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="left|center"
+        android:paddingLeft="20dp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dp_16"
+        project215:customFont="@string/font_regular" />
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+{
+  "product_type": [
+    {
+      "id": 0,
+      "name": "Select Product Type"
+    },
+    {
+      "id": 1,
+      "name": "Promotion"
+    },
+    {
+      "id": 2,
+      "name": "Sample"
+    },
+    {
+      "id": 3,
+      "name": "Damaged"
+    },
+    {
+      "id": 4,
+      "name": "Consumable"
+    },
+    {
+      "id": 5,
+      "name": "Service"
+    }
+  ]
+}

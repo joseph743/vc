@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">PROJET 215</string>
+
+    <!--Login-->
+    <!--Layout-->
+    <string name="email_hint">Email</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="forgot_password">Forgot Password ? </string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">No account? Sign Up</string>
+
+    <!-- requirements -->
+    <string name="role_requirement">Please enter your Role</string>
+    <string name="email_requirement">Please enter your Email</string>
+    <string name="email_validation">Please enter a valid Email</string>
+    <string name="name_requirement">Please enter your Name</string>
+    <string name="company_name_requirement">Please enter your Company Name</string>
+    <string name="mobile_requirement">Please enter your Mobile</string>
+    <string name="mobile_validation">Please enter a valid Mobile</string>
+    <string name="password_requirement">Please enter your Password</string>
+    <string name="password_confirm_requirement">Please Confirm your Password</string>
+    <string name="password_matching_requirement">Passwords Do Not Match</string>
+    <string name="city_requirement">Please enter your City</string>
+    <string name="address_requirement">Please enter your Address</string>
+    <string name="location_requirement">Please Choose your Location</string>
+    <string name="description_requirement">Please enter a Description</string>
+
+    <string name="old_password_requirement">Please Enter your Old Password</string>
+    <string name="new_password_requirement">Please Enter your New Password</string>
+    <string name="confirm_new_password_requirement">Please Confirm your New Password</string>
+
+    <string name="product_requirement">Please enter a Product</string>
+    <string name="product_type_requirement">Please enter a Product Type</string>
+    <string name="qty_requirement">Please enter a Quantity</string>
+    <string name="reason_requirement">Please enter your Reason</string>
+
+    <string name="warehouse_source_requirement">Please select Warehouse Source</string>
+    <string name="warehouse_destination_requirement">Please select Warehouse Destination</string>
+    <string name="date_requirement">Please select Date</string>
+    <string name="product_array_requirement">Please select a Product/s</string>
+    <string name="main_product_array_requirement">Please select a Main Product/s</string>
+    <string name="free_product_array_requirement">Please select a Free Product/s</string>
+
+    <string name="brand_requirement">Please Select a Brand</string>
+    <string name="code_requirement">Please Enter a Code</string>
+    <string name="complete_code_requirement">Please Complete The Code</string>
+    <string name="category_requirement">Please Select a Category</string>
+    <string name="product_name_requirement">Please Enter a Name</string>
+    <string name="barcode_requirement">Please Enter a Barcode</string>
+    <string name="date_manifacture_requirement">Please select a Manifacture Date</string>
+    <string name="date_expiry_requirement">Please select an Expiry Date</string>
+    <string name="cost_requirement">Please Enter a Cost</string>
+    <string name="old_price_requirement">Please Enter an Old Price</string>
+    <string name="discount_requirement">Please Enter a Discount</string>
+    <string name="sale_price_requirement">Please Enter a Sale Price</string>
+    <string name="weight_requirement">Please Enter a Weight</string>
+    <string name="location_array_requirement">Please select a Location/s</string>
+
+    <string name="warehouse_difference">Source and Destination Warehouse Must be Different</string>
+
+    <!--Assignement-->
+    <string name="driver_requirement">Please Select a Driver</string>
+    <string name="start_time_requirement">Please Select a Departure Time</string>
+
+
+    <!--Common Class-->
+    <string name="loading">Loading...</string>
+    <string name="no_network_message">Cannot connect to Internet...Please check your connection!</string>
+    <string name="no_server_messager">The server could not be found. Please try again after some time!!</string>
+    <string name="parse_error">Parsing error! Please try again after some time!!</string>
+    <string name="timeout_error">Connection TimeOut! Please check your internet connection.</string>
+    <string name="under_development">"Under development"</string>
+
+    <!--Forgot Password-->
+    <string name="forgot_pass_submit">Submit</string>
+
+    <!-- Font Name -->
+    <string name="font_regular">fonts/SourceSansPro-Regular.otf</string>
+    <string name="font_bold">fonts/SourceSansPro-Bold.otf</string>
+
+    <!-- barcode scanner -->
+    <string name="toggle_flash">Flash</string>
+    <string name="flash_on">Flash [ON]</string>
+    <string name="flash_off">Flash [OFF]</string>
+    <string name="select_camera">Select a Camera</string>
+    <string name="ok_button">OK</string>
+    <string name="cancel_button">Cancel</string>
+
+</resources>

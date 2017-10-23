@@ -1,0 +1,341 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:2:1-142:12
+	package
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:3:5-33
+		INJECTED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:5:5-75
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:5:22-72
+uses-permission#android.permission.INTERNET
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:6:5-67
+MERGED from [com.google.android.gms:play-services-maps:10.2.1] /Users/DowGroup/.android/build-cache/d67505b5ac21b60abbf6b372a9ed349e184f7ddb/output/AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-maps:10.2.1] /Users/DowGroup/.android/build-cache/d67505b5ac21b60abbf6b372a9ed349e184f7ddb/output/AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:7:22-76
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:8:5-71
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:8:22-68
+uses-permission#android.permission.USE_CREDENTIALS
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:9:5-74
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:9:22-71
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:10:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:11:22-78
+uses-permission#android.permission.CAMERA
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:12:5-65
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:12:22-62
+uses-feature#android.hardware.camera
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:14:5-16:35
+	android:required
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:16:9-32
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:15:9-47
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:17:5-81
+MERGED from [com.mlsdev.rximagepicker:library:1.3.1] /Users/DowGroup/.android/build-cache/6bbd803d4fc220ace75465fce140765f3fd0ed7a/output/AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:17:22-78
+application
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:19:5-141:19
+MERGED from [com.android.volley:volley:1.0.0] /Users/DowGroup/.android/build-cache/bf9e837c9a7b090c155c6c4dc174e87ba734b32a/output/AndroidManifest.xml:9:5-20
+MERGED from [com.mlsdev.rximagepicker:library:1.3.1] /Users/DowGroup/.android/build-cache/6bbd803d4fc220ace75465fce140765f3fd0ed7a/output/AndroidManifest.xml:13:5-21:19
+MERGED from [com.android.support:appcompat-v7:25.0.1] /Users/DowGroup/.android/build-cache/e9155377a700177de173fbe0a003927f644e385e/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.0.1] /Users/DowGroup/.android/build-cache/31259fce134970500f8aa08de605a8c7d404127f/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.0.1] /Users/DowGroup/.android/build-cache/6153f4fa99082bc7aa7c5dd68b00fcdc2a0f96e3/output/AndroidManifest.xml:23:5-20
+MERGED from [com.google.android.gms:play-services-maps:10.2.1] /Users/DowGroup/.android/build-cache/d67505b5ac21b60abbf6b372a9ed349e184f7ddb/output/AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-base:10.2.1] /Users/DowGroup/.android/build-cache/0837894c3bf59fc45e31caf18268c1f44b0478c8/output/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:10.2.1] /Users/DowGroup/.android/build-cache/6ba7d25134c30686e1ed5b5aefdac256766ecef2/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.2.1] /Users/DowGroup/.android/build-cache/dd72487abe811fc179dc5eb20d06ae17c709ede1/output/AndroidManifest.xml:19:5-21:19
+MERGED from [me.dm7.barcodescanner:zxing:1.9.7] /Users/DowGroup/.android/build-cache/c3564b9957efff70e789ff1407c6eb1bcf18ac55/output/AndroidManifest.xml:11:5-20
+MERGED from [me.dm7.barcodescanner:zbar:1.9.7] /Users/DowGroup/.android/build-cache/c973a3d1741ef1e8030ad15d3db8452bde58f9f7/output/AndroidManifest.xml:11:5-20
+MERGED from [me.dm7.barcodescanner:core:1.9.7] /Users/DowGroup/.android/build-cache/39f14c7620db3e4c2c27afa892d60f3a7503aef9/output/AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /Users/DowGroup/.android/build-cache/b916ae59c99bb50b40eda77faeb0a5e674a5330d/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/DowGroup/.android/build-cache/25bf0a0a49ba889b6c9fe1523d1c65be65f992a1/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/DowGroup/.android/build-cache/dc5fa916bc37b19f6f885fb84c33e20558ef4097/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/DowGroup/.android/build-cache/7ae35777753356770b0302aec4252fc3dc51d800/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/DowGroup/.android/build-cache/fdb9e0e4b02e4d3756ef6d2ff40d86c1c0ff7b5c/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /Users/DowGroup/.android/build-cache/708d643092483210d0a2cbe01cb091d497232dc6/output/AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:23:9-41
+	android:supportsRtl
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:24:9-35
+	android:allowBackup
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:21:9-35
+	android:icon
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:22:9-43
+	android:theme
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:25:9-40
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:20:9-56
+meta-data#com.google.android.gms.vision.DEPENDENCIES
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:27:9-29:39
+	android:value
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:29:13-36
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:28:13-70
+meta-data#com.google.android.geo.API_KEY
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:31:9-33:55
+	android:value
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:33:13-52
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:32:13-58
+activity#app.com.project215.activities.SplashScreenActivity
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:35:9-41:20
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:35:19-84
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:36:13-40:29
+action#android.intent.action.MAIN
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:37:17-69
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:37:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:39:17-77
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:39:27-74
+activity#app.com.project215.activities.user.LoginActivity
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:43:9-46:76
+	android:screenOrientation
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:45:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:46:13-73
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:44:13-76
+activity#app.com.project215.activities.user.ChangePasswordActivity
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:48:9-51:76
+	android:screenOrientation
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:50:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:51:13-73
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:49:13-85
+activity#app.com.project215.activities.promotions.CreateFreePromotionActivity
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:52:9-55:76
+	android:screenOrientation
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:54:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:55:13-73
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:53:13-96
+activity#app.com.project215.activities.promotions.CreateDiscountPromotionActivity
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:57:9-60:76
+	android:screenOrientation
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:59:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:60:13-73
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:58:13-100
+activity#app.com.project215.activities.MenuActivity
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:62:9-65:76
+	android:screenOrientation
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:64:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:65:13-73
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:63:13-70
+activity#app.com.project215.activities.warehouse.ListWarehouseActivity
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:67:9-70:76
+	android:screenOrientation
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:69:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:70:13-73
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:68:13-89
+activity#app.com.project215.activities.warehouse.CreateWarehouseActivity
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:72:9-75:76
+	android:screenOrientation
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:74:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:75:13-73
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:73:13-91
+activity#app.com.project215.activities.products.ListProductsActivity
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:77:9-80:76
+	android:screenOrientation
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:79:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:80:13-73
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:78:13-87
+activity#app.com.project215.activities.operations.MakeOperationActivity
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:82:9-85:76
+	android:screenOrientation
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:84:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:85:13-73
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:83:13-90
+activity#app.com.project215.activities.operations.AssigneOperationActivity
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:87:9-90:76
+	android:screenOrientation
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:89:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:90:13-73
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:88:13-93
+activity#app.com.project215.activities.operations.OperationsHistoryActivity
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:93:9-96:76
+	android:screenOrientation
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:95:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:96:13-73
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:94:13-94
+activity#app.com.project215.activities.freeProducts.CreateFreeProductsActivity
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:98:9-101:76
+	android:screenOrientation
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:100:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:101:13-73
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:99:13-97
+activity#app.com.project215.activities.datePickerActivity
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:103:9-106:76
+	android:screenOrientation
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:105:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:106:13-73
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:104:13-76
+activity#app.com.project215.activities.TimePickerActivity
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:108:9-111:76
+	android:screenOrientation
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:110:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:111:13-73
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:109:13-76
+activity#app.com.project215.activities.products.CreateProductActivity
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:113:9-116:76
+	android:screenOrientation
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:115:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:116:13-73
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:114:13-88
+activity#app.com.project215.activities.barcode.BarCodeActivity
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:119:9-122:76
+	android:screenOrientation
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:121:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:122:13-73
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:120:13-81
+activity#app.com.project215.activities.user.LocationMapActivity
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:125:9-128:76
+	android:screenOrientation
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:127:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:128:13-73
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:126:13-82
+activity#app.com.project215.activities.user.ForgotPasswordActivity
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:131:9-134:76
+	android:screenOrientation
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:133:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:134:13-73
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:132:13-85
+activity#app.com.project215.activities.user.RegisterActivity
+ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:136:9-139:76
+	android:screenOrientation
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:138:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:139:13-73
+	android:name
+		ADDED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:137:13-79
+uses-sdk
+INJECTED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.volley:volley:1.0.0] /Users/DowGroup/.android/build-cache/bf9e837c9a7b090c155c6c4dc174e87ba734b32a/output/AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:multidex:1.0.0] /Users/DowGroup/.android/build-cache/50eb394dce7a1b2c35b302d6a98ee1ec2543c57b/output/AndroidManifest.xml:18:5-42
+MERGED from [com.mlsdev.rximagepicker:library:1.3.1] /Users/DowGroup/.android/build-cache/6bbd803d4fc220ace75465fce140765f3fd0ed7a/output/AndroidManifest.xml:7:5-9:41
+MERGED from [io.reactivex:rxandroid:1.0.1] /Users/DowGroup/.android/build-cache/0e1ae9e61292196f68e3ad5db0d24025e3429857/output/AndroidManifest.xml:19:5-43
+MERGED from [com.android.support:appcompat-v7:25.0.1] /Users/DowGroup/.android/build-cache/e9155377a700177de173fbe0a003927f644e385e/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.0.1] /Users/DowGroup/.android/build-cache/31259fce134970500f8aa08de605a8c7d404127f/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.0.1] /Users/DowGroup/.android/build-cache/6153f4fa99082bc7aa7c5dd68b00fcdc2a0f96e3/output/AndroidManifest.xml:21:5-43
+MERGED from [com.google.android.gms:play-services-maps:10.2.1] /Users/DowGroup/.android/build-cache/d67505b5ac21b60abbf6b372a9ed349e184f7ddb/output/AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-base:10.2.1] /Users/DowGroup/.android/build-cache/0837894c3bf59fc45e31caf18268c1f44b0478c8/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:10.2.1] /Users/DowGroup/.android/build-cache/6ba7d25134c30686e1ed5b5aefdac256766ecef2/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:10.2.1] /Users/DowGroup/.android/build-cache/dd72487abe811fc179dc5eb20d06ae17c709ede1/output/AndroidManifest.xml:17:5-43
+MERGED from [me.dm7.barcodescanner:zxing:1.9.7] /Users/DowGroup/.android/build-cache/c3564b9957efff70e789ff1407c6eb1bcf18ac55/output/AndroidManifest.xml:7:5-9:41
+MERGED from [me.dm7.barcodescanner:zbar:1.9.7] /Users/DowGroup/.android/build-cache/c973a3d1741ef1e8030ad15d3db8452bde58f9f7/output/AndroidManifest.xml:7:5-9:41
+MERGED from [me.dm7.barcodescanner:core:1.9.7] /Users/DowGroup/.android/build-cache/39f14c7620db3e4c2c27afa892d60f3a7503aef9/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:25.3.1] /Users/DowGroup/.android/build-cache/b916ae59c99bb50b40eda77faeb0a5e674a5330d/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/DowGroup/.android/build-cache/25bf0a0a49ba889b6c9fe1523d1c65be65f992a1/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/DowGroup/.android/build-cache/dc5fa916bc37b19f6f885fb84c33e20558ef4097/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/DowGroup/.android/build-cache/7ae35777753356770b0302aec4252fc3dc51d800/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/DowGroup/.android/build-cache/fdb9e0e4b02e4d3756ef6d2ff40d86c1c0ff7b5c/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] /Users/DowGroup/.android/build-cache/708d643092483210d0a2cbe01cb091d497232dc6/output/AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.0.1] /Users/DowGroup/.android/build-cache/e9155377a700177de173fbe0a003927f644e385e/output/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml
+activity#com.mlsdev.rximagepicker.HiddenActivity
+ADDED from [com.mlsdev.rximagepicker:library:1.3.1] /Users/DowGroup/.android/build-cache/6bbd803d4fc220ace75465fce140765f3fd0ed7a/output/AndroidManifest.xml:17:9-20:75
+	android:launchMode
+		ADDED from [com.mlsdev.rximagepicker:library:1.3.1] /Users/DowGroup/.android/build-cache/6bbd803d4fc220ace75465fce140765f3fd0ed7a/output/AndroidManifest.xml:19:13-43
+	android:theme
+		ADDED from [com.mlsdev.rximagepicker:library:1.3.1] /Users/DowGroup/.android/build-cache/6bbd803d4fc220ace75465fce140765f3fd0ed7a/output/AndroidManifest.xml:20:13-72
+	android:name
+		ADDED from [com.mlsdev.rximagepicker:library:1.3.1] /Users/DowGroup/.android/build-cache/6bbd803d4fc220ace75465fce140765f3fd0ed7a/output/AndroidManifest.xml:18:13-67
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/src/main/AndroidManifest.xml:2:1-142:12 reason: com.mlsdev.rximagepicker requested WRITE_EXTERNAL_STORAGE
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:10.2.1] /Users/DowGroup/.android/build-cache/d67505b5ac21b60abbf6b372a9ed349e184f7ddb/output/AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:10.2.1] /Users/DowGroup/.android/build-cache/d67505b5ac21b60abbf6b372a9ed349e184f7ddb/output/AndroidManifest.xml:21:19-51
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:10.2.1] /Users/DowGroup/.android/build-cache/d67505b5ac21b60abbf6b372a9ed349e184f7ddb/output/AndroidManifest.xml:21:52-75
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:10.2.1] /Users/DowGroup/.android/build-cache/0837894c3bf59fc45e31caf18268c1f44b0478c8/output/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:10.2.1] /Users/DowGroup/.android/build-cache/0837894c3bf59fc45e31caf18268c1f44b0478c8/output/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:10.2.1] /Users/DowGroup/.android/build-cache/0837894c3bf59fc45e31caf18268c1f44b0478c8/output/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:10.2.1] /Users/DowGroup/.android/build-cache/0837894c3bf59fc45e31caf18268c1f44b0478c8/output/AndroidManifest.xml:19:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:10.2.1] /Users/DowGroup/.android/build-cache/dd72487abe811fc179dc5eb20d06ae17c709ede1/output/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:10.2.1] /Users/DowGroup/.android/build-cache/dd72487abe811fc179dc5eb20d06ae17c709ede1/output/AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:10.2.1] /Users/DowGroup/.android/build-cache/dd72487abe811fc179dc5eb20d06ae17c709ede1/output/AndroidManifest.xml:20:20-65
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-v4:25.3.1] /Users/DowGroup/.android/build-cache/b916ae59c99bb50b40eda77faeb0a5e674a5330d/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/DowGroup/.android/build-cache/25bf0a0a49ba889b6c9fe1523d1c65be65f992a1/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/DowGroup/.android/build-cache/dc5fa916bc37b19f6f885fb84c33e20558ef4097/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/DowGroup/.android/build-cache/7ae35777753356770b0302aec4252fc3dc51d800/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/DowGroup/.android/build-cache/fdb9e0e4b02e4d3756ef6d2ff40d86c1c0ff7b5c/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /Users/DowGroup/.android/build-cache/708d643092483210d0a2cbe01cb091d497232dc6/output/AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:support-v4:25.3.1] /Users/DowGroup/.android/build-cache/b916ae59c99bb50b40eda77faeb0a5e674a5330d/output/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:support-v4:25.3.1] /Users/DowGroup/.android/build-cache/b916ae59c99bb50b40eda77faeb0a5e674a5330d/output/AndroidManifest.xml:26:9-47

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/DowGroup/.android/build-cache/e9155377a700177de173fbe0a003927f644e385e/output/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/Users/DowGroup/.android/build-cache/e9155377a700177de173fbe0a003927f644e385e/output/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/DowGroup/.android/build-cache/e9155377a700177de173fbe0a003927f644e385e/output/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/DowGroup/.android/build-cache/e9155377a700177de173fbe0a003927f644e385e/output/res/layout-v21/notification_template_icon_group.xml"
+    }
+]

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:project215="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+        <!-- warehouse management -->
+        <app.com.project215.widgets.CustomTextView
+            android:id="@+id/tv_page_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/black"
+            android:gravity="left|center"
+            android:paddingLeft="20dp"
+            android:text="Warehouse Management"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dp_16"
+            project215:customFont="@string/font_regular" />
+
+        <ImageView
+            android:id="@+id/img_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_delete_forever_white_36dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/parent_of_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- name -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <app.com.project215.widgets.CustomTextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bg"
+                    android:padding="10dp"
+                    android:text="Name"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    project215:customFont="@string/font_regular" />
+
+                <app.com.project215.widgets.CustomEditText
+                    android:id="@+id/ed_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bg"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    project215:customFont="@string/font_regular" />
+            </LinearLayout>
+
+
+            <!-- address -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:orientation="horizontal">
+
+                <app.com.project215.widgets.CustomTextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+
+                    android:padding="10dp"
+                    android:text="Address"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    project215:customFont="@string/font_regular" />
+
+                <app.com.project215.widgets.CustomEditText
+                    android:id="@+id/ed_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:layout_marginBottom="1dp"
+                    android:inputType="textMultiLine"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    project215:customFont="@string/font_regular" />
+            </LinearLayout>
+
+            <!-- description -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:orientation="horizontal">
+
+                <app.com.project215.widgets.CustomTextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+
+                    android:padding="10dp"
+                    android:text="Description"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    project215:customFont="@string/font_regular" />
+
+                <app.com.project215.widgets.CustomEditText
+                    android:id="@+id/ed_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:layout_marginBottom="1dp"
+                    android:inputType="textMultiLine"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    project215:customFont="@string/font_regular" />
+            </LinearLayout>
+
+            <!-- city -->
+            <!--<FrameLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10dp">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="right|center"-->
+                    <!--android:layout_marginEnd="10dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:src="@drawable/ic_arrow_down" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:id="@+id/tv_city"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:padding="10dp"
+                        android:text="City"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+
+                    <app.com.project215.widgets.CustomEditText
+                        android:id="@+id/ed_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:inputType="textCapSentences"
+                        android:padding="10dp"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+
+                    <!--<Spinner-->
+                        <!--android:id="@+id/sp_city"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@drawable/edittext_bg"-->
+                        <!--android:gravity="center_vertical|center|start"-->
+                        <!--android:padding="10dp" />-->
+
+                </LinearLayout>
+
+            <!--</FrameLayout>-->
+
+            <!-- location   -->
+
+            <app.com.project215.widgets.CustomTextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="Choose your location"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                project215:customFont="@string/font_regular" />
+
+
+            <!-- create warehouse -->
+            <app.com.project215.widgets.CustomTextView
+                android:id="@+id/tv_create_warehouse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/black"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Create Warehouse"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                project215:customFont="@string/font_regular" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

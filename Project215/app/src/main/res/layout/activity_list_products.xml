@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:project215="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- product management -->
+    <app.com.project215.widgets.CustomTextView
+        android:id="@+id/tv_page_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/black"
+        android:gravity="left|center"
+        android:paddingLeft="20dp"
+        android:text="Our Products"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dp_16"
+        project215:customFont="@string/font_regular" />
+
+    <!-- search by code / name -->
+    <LinearLayout
+        android:id="@+id/ll_search_code"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <app.com.project215.widgets.CustomTextView
+            android:id="@+id/tv_search_code"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:padding="10dp"
+            android:text="Search"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            project215:customFont="@string/font_regular" />
+
+        <app.com.project215.widgets.CustomEditText
+            android:id="@+id/ed_search_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:inputType="text"
+            android:hint="Search By Code Or Name"
+            android:textColorHint="@color/theme_grey"
+            android:padding="10dp"
+            android:textSize="14sp"
+            project215:customFont="@string/font_regular" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:fillViewport="true"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="horizontal|vertical">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal|vertical">
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/tl_parent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_row_border"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:text="Code"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        project215:customFont="@string/font_regular" />
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_row_border"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:text="Product Type"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        project215:customFont="@string/font_regular" />
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_row_border"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:text="Name"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        project215:customFont="@string/font_regular" />
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_row_border"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:text="Qty"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        project215:customFont="@string/font_regular" />
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_row_border"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:text="Brand"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        project215:customFont="@string/font_regular" />
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_row_border"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:text="Category"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        project215:customFont="@string/font_regular" />
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_row_border"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:text="Cost ($)"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        project215:customFont="@string/font_regular" />
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_row_border"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:text="Sale Price ($)"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        project215:customFont="@string/font_regular" />
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_row_border"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:text="Barcode"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        project215:customFont="@string/font_regular" />
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_row_border"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        project215:customFont="@string/font_regular" />
+
+
+                </TableRow>
+
+                <!--<TableRow-->
+                <!--android:background="#000000"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_margin="1dp"-->
+                <!--android:layout_weight="1"-->
+                <!--&gt;-->
+
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                <!--android:text=" Text"-->
+                <!--android:layout_margin="1dp"-->
+                <!--android:layout_column="0"-->
+                <!--android:background="#FFFFFF"-->
+                <!--android:gravity="center"-->
+                <!--/>-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                <!--android:text=" Text"-->
+                <!--android:layout_margin="1dp"-->
+                <!--android:layout_column="1"-->
+                <!--android:background="#FFFFFF"-->
+                <!--android:gravity="center"-->
+                <!--/>-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                <!--android:text=" Text"-->
+                <!--android:layout_margin="1dp"-->
+                <!--android:background="#FFFFFF"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_column="2" />-->
+                <!--</TableRow>-->
+
+
+            </TableLayout>
+
+        </HorizontalScrollView>
+    </ScrollView>
+</LinearLayout>
+
+

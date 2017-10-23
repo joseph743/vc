@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:project215="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <!-- warehouse management -->
+    <app.com.project215.widgets.CustomTextView
+        android:id="@+id/tv_header_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/black"
+        android:gravity="left|center"
+        android:paddingLeft="20dp"
+        android:text="Sign Up"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dp_16"
+        project215:customFont="@string/font_regular" />
+
+
+    <ScrollView
+        android:id="@+id/parent_of_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:id="@+id/parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- select role -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/role1" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_arrow_down" />
+
+                    <Spinner
+                        android:id="@+id/sp_role"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edittext_bg"
+                        android:gravity="center_vertical|center|start"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp" />
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:id="@+id/tv_select_role"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:background="@android:color/white"
+                        android:padding="10dp"
+                        android:text="Select Role"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:visibility="invisible" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="@drawable/edittext_bg"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<app.com.project215.widgets.CustomTextView-->
+            <!--android:id="@+id/tv_brand"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="10dp"-->
+            <!--android:text="Brand"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="14sp"-->
+            <!--project215:customFont="@string/font_regular" />-->
+
+            <!--<FrameLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/edittext_bg">-->
+
+            <!--<Spinner-->
+            <!--android:id="@+id/sp_brand"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_vertical|center|start"-->
+            <!--android:padding="10dp" />-->
+
+            <!--<app.com.project215.widgets.CustomTextView-->
+            <!--android:id="@+id/tv_select_brand"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="1dp"-->
+            <!--android:background="@android:color/white"-->
+            <!--android:padding="10dp"-->
+            <!--android:text="Select Brand"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="14sp"-->
+            <!--android:visibility="invisible" />-->
+            <!--</FrameLayout>-->
+            <!--</LinearLayout>-->
+
+            <!-- email -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_email" />
+
+                <app.com.project215.widgets.CustomEditText
+                    android:id="@+id/ed_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_bg"
+                    android:ems="10"
+                    android:hint="Email*"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="255"
+                    android:padding="10dp"
+                    android:textColorHint="@color/theme_grey"
+                    android:textSize="14sp"
+                    project215:customFont="@string/font_regular" />
+
+            </LinearLayout>
+
+            <!-- name -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_username_login" />
+
+                <app.com.project215.widgets.CustomEditText
+                    android:id="@+id/ed_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_bg"
+                    android:ems="10"
+                    android:hint="Name*"
+                    android:inputType="textPersonName"
+                    android:maxLength="40"
+                    android:padding="10dp"
+                    android:textColorHint="@color/theme_grey"
+                    android:textSize="14sp"
+                    project215:customFont="@string/font_regular" />
+            </LinearLayout>
+
+            <!-- mobile number -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/imageVi2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/ic_mobile" />
+
+                <app.com.project215.widgets.CustomEditText
+                    android:id="@+id/ed_mobile_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_bg"
+                    android:ems="10"
+                    android:hint="Mobile number*"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:textColorHint="@color/theme_grey"
+                    android:textSize="14sp"
+                    project215:customFont="@string/font_regular" />
+
+            </LinearLayout>
+
+            <!-- phone number -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/ic_mobile"
+                    android:visibility="visible" />
+
+
+                <app.com.project215.widgets.CustomEditText
+                    android:id="@+id/ed_phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_bg"
+                    android:ems="10"
+                    android:hint="Phone number"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:textColorHint="@color/theme_grey"
+                    android:textSize="14sp"
+                    project215:customFont="@string/font_regular" />
+
+            </LinearLayout>
+
+            <!-- fax -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/ic_mobile"
+                    android:visibility="visible" />
+
+                <app.com.project215.widgets.CustomEditText
+                    android:id="@+id/ed_fax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_bg"
+                    android:ems="10"
+                    android:hint="Fax"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:textColorHint="@color/theme_grey"
+                    android:textSize="14sp"
+                    project215:customFont="@string/font_regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view_password_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!-- paswword -->
+                <LinearLayout
+                    android:id="@+id/view_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_password_login" />
+
+                    <app.com.project215.widgets.CustomEditText
+                        android:id="@+id/ed_pass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_bg"
+                        android:ems="10"
+                        android:hint="Password*"
+                        android:inputType="textPassword"
+                        android:maxLength="64"
+                        android:padding="10dp"
+                        android:textColorHint="@color/theme_grey"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+
+                </LinearLayout>
+
+                <!-- confirm paswword -->
+                <LinearLayout
+                    android:id="@+id/view_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_password_login"
+                         />
+
+                    <app.com.project215.widgets.CustomEditText
+                        android:id="@+id/ed_confirm_pass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_bg"
+                        android:ems="10"
+                        android:hint="Confirm Password*"
+                        android:inputType="textPassword"
+
+                        android:maxLength="64"
+                        android:padding="10dp"
+                        android:textColorHint="@color/theme_grey"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- for city and adress to add and remove -->
+            <LinearLayout
+                android:id="@+id/view_city_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- city -->
+                <LinearLayout
+                    android:id="@+id/view_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/ic_city" />
+
+                    <app.com.project215.widgets.CustomEditText
+                        android:id="@+id/ed_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_bg"
+                        android:ems="10"
+                        android:hint="City*"
+                        android:inputType="textCapSentences"
+                        android:maxLength="64"
+                        android:padding="10dp"
+                        android:textColorHint="@color/theme_grey"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+
+                    <!--<FrameLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginStart="10dp">-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="right|center"-->
+                    <!--android:layout_marginEnd="10dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:src="@drawable/ic_arrow_down" />-->
+
+                    <!--<Spinner-->
+                    <!--android:id="@+id/sp_city"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:background="@drawable/edittext_bg"-->
+                    <!--android:gravity="center_vertical|center|start"-->
+                    <!--android:paddingBottom="10dp"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:paddingTop="10dp" />-->
+                    <!--</FrameLayout>-->
+                </LinearLayout>
+
+                <!-- address -->
+                <LinearLayout
+                    android:id="@+id/view_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top|center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/ic_address" />
+
+                    <app.com.project215.widgets.CustomEditText
+
+                        android:id="@+id/ed_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_bg"
+                        android:ems="10"
+                        android:gravity="top|left"
+                        android:hint="Address*"
+                        android:inputType="textCapSentences"
+                        android:padding="10dp"
+                        android:textColorHint="@color/theme_grey"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+
+                </LinearLayout>
+
+                <!-- location   -->
+                <LinearLayout
+                    android:id="@+id/view_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top|center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/ic_city" />
+
+                    <app.com.project215.widgets.CustomTextView
+                        android:id="@+id/ed_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="top|left"
+                        android:padding="10dp"
+                        android:text="Choose your location*"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        project215:customFont="@string/font_regular" />
+
+                </LinearLayout>
+
+
+                <!-- location      <fragment
+                       android:id="@+id/map"
+                       android:name="com.google.android.gms.maps.SupportMapFragment"
+                       android:layout_width="match_parent"
+                       android:layout_height="300dp"
+                       tools:context="app.com.project215.activities.login.RegisterActivity" />
+    -->
+            </LinearLayout>
+
+
+            <!-- register btn -->
+            <app.com.project215.widgets.CustomTextView
+                android:id="@+id/tv_create_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/black"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Create Account"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                project215:customFont="@string/font_regular" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:project215="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/parent_of_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <!-- Account management -->
+        <app.com.project215.widgets.CustomTextView
+            android:id="@+id/tv_account_management"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Account Management"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dp_15"
+            project215:customFont="@string/font_regular" />
+
+        <app.com.project215.widgets.CustomTextView
+            android:id="@+id/tv_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="• Profile"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dp_15"
+            project215:customFont="@string/font_regular" />
+
+        <app.com.project215.widgets.CustomTextView
+            android:id="@+id/tv_change_password"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="• Change Password"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dp_15"
+            project215:customFont="@string/font_regular" />
+
+        <!-- warehouse management -->
+        <app.com.project215.widgets.CustomTextView
+        android:id="@+id/tv_warehouse_management"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Warehouse Management"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dp_15"
+        project215:customFont="@string/font_regular" />
+
+        <app.com.project215.widgets.CustomTextView
+            android:id="@+id/tv_view_warehouses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="• List of warehouses"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dp_15"
+            project215:customFont="@string/font_regular" />
+
+        <app.com.project215.widgets.CustomTextView
+            android:id="@+id/tv_create_warehouse"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="• Create a warehouse"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dp_15"
+            project215:customFont="@string/font_regular" />
+
+        <!-- Products management -->
+        <app.com.project215.widgets.CustomTextView
+            android:id="@+id/tv_products_management"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Products Management"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dp_15"
+            project215:customFont="@string/font_regular" />
+
+        <app.com.project215.widgets.CustomTextView
+            android:id="@+id/tv_view_products"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="• Table of products"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dp_15"
+            project215:customFont="@string/font_regular" />
+
+        <app.com.project215.widgets.CustomTextView
+            android:id="@+id/tv_create_product"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="• Create a product"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dp_15"
+            project215:customFont="@string/font_regular" />
+
+        <!-- promotions management -->
+        <app.com.project215.widgets.CustomTextView
+            android:id="@+id/tv_promotions"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Promotions"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dp_15"
+            project215:customFont="@string/font_regular" />
+
+        <app.com.project215.widgets.CustomTextView
+            android:id="@+id/tv_create_promotion_free"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="• Create a Promotion With Free Product/s"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dp_15"
+            project215:customFont="@string/font_regular" />
+
+        <app.com.project215.widgets.CustomTextView
+            android:id="@+id/tv_create_promotion_discount"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="• Create a Discounted Promotion"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dp_15"
+            project215:customFont="@string/font_regular" />
+
+        <!-- free products management -->
+        <app.com.project215.widgets.CustomTextView
+            android:id="@+id/tv_free_products"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Free Products"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dp_15"
+            project215:customFont="@string/font_regular" />
+
+        <!--<app.com.project215.widgets.CustomTextView-->
+            <!--android:id="@+id/tv_view_free_products"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:gravity="left"-->
+            <!--android:text="• Table of free products"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="@dimen/dp_15"-->
+            <!--project215:customFont="@string/font_regular" />-->
+
+        <app.com.project215.widgets.CustomTextView
+            android:id="@+id/tv_create_free_product"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="• Create a free product"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dp_15"
+            project215:customFont="@string/font_regular" />
+
+
+        <!-- operations management -->
+        <app.com.project215.widgets.CustomTextView
+            android:id="@+id/tv_operations"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Operations"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dp_15"
+            project215:customFont="@string/font_regular" />
+
+        <app.com.project215.widgets.CustomTextView
+            android:id="@+id/tv_all_operations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="• Make Operation"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dp_15"
+            project215:customFont="@string/font_regular" />
+
+        <app.com.project215.widgets.CustomTextView
+            android:id="@+id/tv_history_operations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="• Operations Status"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dp_15"
+            project215:customFont="@string/font_regular" />
+
+        <!-- adjustments management -->
+        <!--<app.com.project215.widgets.CustomTextView-->
+            <!--android:id="@+id/tv_adjustments"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="Adjustments"-->
+            <!--android:background="@android:color/black"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="@dimen/dp_15"-->
+            <!--project215:customFont="@string/font_regular" />-->
+
+        <!-- barcode scanner  -->
+        <app.com.project215.widgets.CustomTextView
+            android:id="@+id/tv_barcode_scanner"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Barcode scanner"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dp_15"
+            project215:customFont="@string/font_regular" />
+
+        <app.com.project215.widgets.CustomTextView
+            android:id="@+id/tv_open_barcode_scanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="• Barcode Scanner"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dp_15"
+            project215:customFont="@string/font_regular" />
+
+    </LinearLayout>
+
+
+</ScrollView>

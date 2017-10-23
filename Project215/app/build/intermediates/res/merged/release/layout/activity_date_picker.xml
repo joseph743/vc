@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:project215="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <DatePicker
+        android:id="@+id/picker_date_picker"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:datePickerMode="calendar"/>
+
+    <!-- create product -->
+    <app.com.project215.widgets.CustomTextView
+        android:id="@+id/tv_submit_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Submit Date"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        project215:customFont="@string/font_regular" />
+
+
+</LinearLayout>

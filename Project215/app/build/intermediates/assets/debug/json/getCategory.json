@@ -1,0 +1,19 @@
+{
+  "category": [
+    {
+      "id": 0,
+      "name": "Select Category",
+      "reference": ""
+    },
+    {
+      "id": 1,
+      "name": "Beverages",
+      "reference": 3306
+    },
+    {
+      "id": 2,
+      "name": "Tissues",
+      "reference": 5900
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dp_eight">12dp</dimen>
+    <dimen name="dp_fifteen">15dp</dimen>
+    <dimen name="dp_fifty">50dp</dimen>
+    <dimen name="dp_five">5dp</dimen>
+    <dimen name="dp_ten">10dp</dimen>
+    <dimen name="dp_two">2dp</dimen>
+    <dimen name="dp_two_hundred">200dp</dimen>
+    <dimen name="sp_medium">14sp</dimen>
+    <dimen name="sp_mediumx">16sp</dimen>
+    <dimen name="sp_mediumxx">18sp</dimen>
+    <dimen name="sp_mediumxxx">20sp</dimen>
+    <integer name="viewfinder_border_length">80</integer>
+    <integer name="viewfinder_border_width">5</integer>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyA38exDsU3ZSKD__gQ2Zli9c4-0x_n7jxk</string>
+</resources>

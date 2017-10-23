@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/build/intermediates/res/merged/release/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/DowGroup/.android/build-cache/e9155377a700177de173fbe0a003927f644e385e/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/Users/DowGroup/Documents/Android_Studio_Workspace/Project215/app/build/intermediates/res/merged/release/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/DowGroup/.android/build-cache/e9155377a700177de173fbe0a003927f644e385e/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    }
+]
