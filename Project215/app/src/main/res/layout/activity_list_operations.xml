@@ -105,6 +105,21 @@
                         project215:customFont="@string/font_regular" />
 
                     <app.com.project215.widgets.CustomTextView
+                        android:id="@+id/tv_driver"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_row_border"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:text="Driver"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        project215:customFont="@string/font_regular" />
+
+                    <app.com.project215.widgets.CustomTextView
                         android:layout_width="120dp"
                         android:layout_height="match_parent"
 

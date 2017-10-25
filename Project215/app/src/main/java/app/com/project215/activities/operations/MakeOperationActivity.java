@@ -200,7 +200,7 @@ public class MakeOperationActivity extends AppCompatActivity implements View.OnC
                 linear_big_parent.removeView(text_submit);
 
                 //if not driver manager and status not pending remove assigne btn
-                if (!(c_jsonObject.getString("role_id").contains("5") && c_jsonObject.getString("status").toLowerCase().contains("pending"))) {
+                if (!(c_jsonObject.getString("role_id").contains("5") && c_jsonObject.getString("status").toLowerCase().contains("pending") && c_jsonObject.getString("driver_name").length() == 0)) {
                     linear_big_parent.removeView(text_assigne);
                 }
 

@@ -30,7 +30,7 @@ public class OperationsHistoryActivity extends AppCompatActivity {
 
     TableLayout table_parent;
     TableRow row, tableRow_parent;
-    TextView text_view, text_type, text_source, text_destination , text_start_time, text_end_time;
+    TextView text_view, text_type, text_source, text_destination , text_driver,text_start_time, text_end_time;
     JSONObject jb;
 
     public String selectedRoleID;
@@ -71,7 +71,7 @@ public class OperationsHistoryActivity extends AppCompatActivity {
         text_source = (TextView) findViewById(R.id.tv_source);
         text_destination = (TextView) findViewById(R.id.tv_destination);
         text_type = (TextView) findViewById(R.id.tv_type);
-
+        text_driver = (TextView) findViewById(R.id.tv_driver);
         text_start_time = (TextView) findViewById(R.id.tv_start_time);
         text_end_time = (TextView) findViewById(R.id.tv_end_time);
 
@@ -79,6 +79,10 @@ public class OperationsHistoryActivity extends AppCompatActivity {
             tableRow_parent.removeView(text_type);
             tableRow_parent.removeView(text_source);
             tableRow_parent.removeView(text_destination);
+        }
+
+        if(!selectedRoleID.contains("5")){
+            tableRow_parent.removeView(text_driver);
         }
 
         if(!selectedRoleID.contains("4")){
@@ -121,7 +125,18 @@ public class OperationsHistoryActivity extends AppCompatActivity {
                                 drowField(jb.toString(), jb.getString("source_name"));
                                 drowField(jb.toString(), jb.getString("destination_name"));
                             }
+
                             drowField(jb.toString(), jb.getString("status"));
+
+                            if (selectedRoleID.contains("5")) {
+                                if (jb.getString("driver_name").length() == 0) {
+                                    drowField(jb.toString(), "-");
+                                } else {
+                                    drowField(jb.toString(), jb.getString("driver_name"));
+                                }
+                            }
+
+
                             drowField(jb.toString(), jb.getString("date"));
 
                             //if driver end time + start time
